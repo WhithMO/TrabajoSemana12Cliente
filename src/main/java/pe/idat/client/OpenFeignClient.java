@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import pe.idat.dto.HospitalDTO;
 
-@FeignClient(name = "alumno-microservicio", url= "localhost:8085")
+@FeignClient(name = "hospital-microservicio", url= "localhost:8085")
 public interface OpenFeignClient {
 
 	   @GetMapping("/api/hospital/v1/listar")
